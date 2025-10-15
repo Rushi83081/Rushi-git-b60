@@ -1,65 +1,73 @@
-📦 Kubernetes Architecture – Simple Explanation
+# 🚀 Kubernetes Architecture Explained Simply
 
-This document explains the basic architecture of Kubernetes in simple words, covering both master (control plane) and worker nodes, along with their key components.
+This document breaks down the core **architecture of Kubernetes** into easy-to-understand parts — perfect for beginners and those wanting a quick refresher!
 
-🧠 Master Node (Control Plane)
+---
 
-The master node is the brain of the Kubernetes cluster. It controls and manages everything that happens in the system.
+## 🧠 Master Node (Control Plane)
 
-🔹 Components:
+The **master node** is the **brain** of the Kubernetes cluster — it controls and manages the whole system.
 
-API Server
+### Key Components:
 
-The main entry point for all requests.
+- 🔹 **API Server**  
+  The front door for all commands and requests (from users or tools like `kubectl`).  
+  *Everything flows through here first!*
 
-Every command (from users or tools like kubectl) first goes through the API server.
+- 🔹 **Scheduler**  
+  Decides **which worker node** should run your app’s pods, based on available resources.
 
-Scheduler
+- 🔹 **Controller Manager**  
+  Watches over the cluster, ensuring apps are running smoothly.  
+  Automatically fixes problems by restarting pods or managing resources.
 
-Decides which worker node will run a new application (pod).
+- 🔹 **etcd**  
+  A lightweight, distributed **key-value database** storing the entire cluster’s state and configurations.
 
-It checks resource availability and assigns the task.
+---
 
-Controller Manager
+## ⚙️ Worker Node (App Executor)
 
-Watches the cluster to make sure all apps (pods) are running as expected.
+Worker nodes are where your applications **actually run** — inside containers managed by Kubernetes.
 
-If something fails, it tries to fix it automatically (e.g., restart a pod).
+### Key Components:
 
-etcd
+- 🔹 **Container Runtime**  
+  Software like **Docker** or **containerd** that runs your app inside containers.
 
-A lightweight key-value database.
+- 🔹 **kube-proxy**  
+  Handles networking and communication between pods and services.  
+  Manages IP addresses and load balancing.
 
-Stores the entire state of the Kubernetes cluster, including configurations and current status.
+- 🔹 **kubelet**  
+  The agent on each worker node.  
+  Listens to the master’s instructions and manages pods accordingly.  
+  Reports status back to the control plane.
 
-⚙️ Worker Node
+---
 
-The worker nodes are the machines where your applications actually run inside containers.
+## 🗂️ Quick Summary Table
 
-🔹 Components:
+| Component          | Node Type   | Description                                       |
+|--------------------|-------------|-------------------------------------------------|
+| **API Server**     | Master      | Receives all requests and commands               |
+| **Scheduler**      | Master      | Chooses nodes to run pods                         |
+| **Controller Manager** | Master   | Keeps apps healthy and running                    |
+| **etcd**           | Master      | Stores cluster data and config                    |
+| **Container Runtime** | Worker    | Runs containers (your app)                        |
+| **kube-proxy**     | Worker      | Manages networking between pods                   |
+| **kubelet**        | Worker      | Runs pods and reports status to master            |
 
-Container Runtime
+---
 
-Software like Docker or containerd that runs your application inside containers.
+## 📝 Notes to Remember
 
-kube-proxy
+- A **Pod** is the smallest deployable unit in Kubernetes — usually contains **one container**, but can hold more.  
+- A **Node** is a machine (physical or virtual) —  
+  - The **master node** manages the cluster,  
+  - The **worker nodes** run your applications.
 
-Manages networking.
+---
 
-Assigns IPs and helps pods talk to each other and to the outside world.
+## 📂 Optional Repo Structure
 
-kubelet
-
-An agent that runs on each worker node.
-
-It receives instructions from the master (API server), runs the containers (pods), and reports back the status.
-
-🔁 Summary Table
-Component	Node Type	Description
-API Server	Master	Handles all incoming requests
-Scheduler	Master	Chooses where to run new pods
-Controller Manager	Master	Keeps the system healthy
-etcd	Master	Stores cluster state and config
-Container Runtime	Worker	Runs app containers
-kube-proxy	Worker	Manages networking and IPs
-kubelet	Worker	Runs pods and talks to master
