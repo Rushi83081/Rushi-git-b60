@@ -66,38 +66,39 @@ Worker nodes are where your applications **actually run** — inside containers 
 
 ---
 
-### 1. Check all Pods
+
+## 1. Check Existing Pods
 
 ```bash
 kubectl get pods
-Lists all the pods running in the current namespace.
+Lists all pods in the current namespace.
 
-2. Run a Pod
+2. Run a Pod (Create a Pod)
 bash
 Copy code
 kubectl run my-pod --image=nginx --restart=Never
 Creates a pod named my-pod using the nginx image.
---restart=Never ensures this runs as a pod (not a deployment).
+--restart=Never means it creates a pod directly (not a deployment).
 
-3. Expose the Pod as a Service
+3. Expose the Pod (Create a Service)
 bash
 Copy code
 kubectl expose pod my-pod --type=NodePort --port=80 --target-port=80
-Creates a service exposing my-pod on port 80.
-NodePort makes it accessible outside the cluster.
+Creates a service to expose the pod my-pod on port 80.
+--type=NodePort exposes the service on a port on each node.
 
 4. Check Services
 bash
 Copy code
 kubectl get services
-Lists all the services in the current namespace.
+Lists all services in the current namespace.
 
-5. Execute a Command Inside the Pod
+5. Execute Command Inside a Pod
 bash
 Copy code
 kubectl exec -it my-pod -- /bin/bash
-Opens an interactive terminal inside the my-pod container.
-Useful for debugging.
+Starts an interactive bash shell inside the my-pod container.
+Use this to debug or run commands inside the pod.
 
 6. Delete the Pod
 bash
@@ -105,9 +106,10 @@ Copy code
 kubectl delete pod my-pod
 Deletes the pod named my-pod.
 
-7. Delete the Service
+Bonus: Delete the Service
 bash
 Copy code
 kubectl delete service my-pod
-Deletes the service exposing the pod.
 
+Delete the Service
+kubectl delete service my-pod
