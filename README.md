@@ -75,3 +75,33 @@ kubectl get pods
 kubectl run my-pod --image=nginx
 ```
 Creates a pod named my-pod using the nginx image.
+
+3. Expose the Pod (Create a Service)
+```bash
+kubectl expose pod my-pod --type=NodePort --port=80 --target-port=80
+```
+Creates a service to expose the pod my-pod on port 80.
+
+4. Check Services
+```bash
+kubectl get services
+```
+Lists all services in the current namespace.
+
+5. Execute Command Inside a Pod (Login)
+```bash
+kubectl exec -it my-pod -- /bin/bash
+```
+Starts an interactive bash shell inside the my-pod container.
+
+6. Delete the Pod
+```bash
+kubectl delete pod my-pod
+```
+Deletes the pod named my-pod.
+
+7. Delete the Service
+```bash
+kubectl delete service my-pod
+```
+Deletes the service exposing the pod.
