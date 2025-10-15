@@ -71,5 +71,7 @@ Worker nodes are where your applications **actually run** — inside containers 
 kubectl get pods
 ```
 2. Run a Pod (Create a Pod)
-```kubectl run my-pod --image=nginx ```
+```bash
+kubectl run my-pod --image=nginx
+```
 Creates a pod named my-pod using the nginx image.
