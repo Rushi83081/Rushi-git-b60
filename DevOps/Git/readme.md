@@ -7,8 +7,11 @@ Git is a distributed version control system (VCS) that helps teams track changes
 🧑‍🤝‍🧑 Collaboration: Work together without overwriting code.
 
 🔁 Version History: Track every change.
+
 🕒 Rollback: Easily revert to previous versions.
+
 🧱 Branching & Merging: Isolate and combine features seamlessly.
+
 🌍 Open Source & Universal: Works with GitHub, GitLab, Bitbucket, etc.
 
 🏗️ Core Concepts
