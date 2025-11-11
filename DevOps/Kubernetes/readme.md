@@ -22,16 +22,22 @@ Kubernetes (K8s) is an open-source container orchestration platform that automat
 
 🛠️ Common Commands
 # Check cluster nodes
+```bash
 kubectl get nodes
-
+```
 # Deploy an app
+```bash
 kubectl apply -f deployment.yaml
-
+```
 # Check running pods
+```bash
 kubectl get pods
-
+```
 # View logs
+```bash
 kubectl logs <pod_name>
-
+```
 # Delete resources
+```bash
 kubectl delete -f deployment.yaml
+```
