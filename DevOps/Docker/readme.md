@@ -23,20 +23,25 @@ Docker is a platform that enables developers to build, package, and run applicat
 🧱 Basic Commands
 
 # Build an image
+```bash
 docker build -t myapp .
-
+```
 # Run a container
+```bash
 docker run -itd --name c1 -p 80:80 myapp
-
+```
 # List containers
+```bash
 docker ps
-
-# Pull image 
+```
+# Pull image
+```bash
 docker pull nginx
-
+```
 # Push image to Docker Hub
+```bash
 docker push username/myapp
-
+```
 # Access the container’s shell (interactive mode)
 docker exec -it <container_id_or_name> /bin/bash
 
