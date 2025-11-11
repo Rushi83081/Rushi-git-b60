@@ -8,9 +8,13 @@ It allows you to define, provision, and manage infrastructure across multiple cl
 ⚙️ Why Use Terraform?
 
 🚀 Automation: Manage your infrastructure as code — fully automated deployments.
+
 🌐 Multi-Cloud Support: Works with AWS, Azure, GCP, and many others.
+
 🔁 Consistency: Reproducible environments across teams and environments.
+
 💡 Scalability: Manage complex infrastructure with ease.
+
 🧠 Version Control: Store and track infrastructure changes using Git.
 
 🏗️ Core Concepts
