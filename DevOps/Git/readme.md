@@ -27,23 +27,31 @@ Git is a distributed version control system (VCS) that helps teams track changes
 🛠️ Basic Commands
 
 # Initialize repository
+```bash
 git init
-
+```
 # Add files
+```bash
 git add .
-
+```
 # Commit changes
+```bash
 git commit -m "Initial commit"
-
+```
 # Create and switch branches
+```bash
 git branch feature-xyz
 git checkout feature-xyz
-
+```
 # Push to remote
+```bash
 git push origin main
-
+```
 # Pull latest changes
+```bash
 git pull origin main
-
+```
 # View log
+```bash
 git log --oneline
+```
