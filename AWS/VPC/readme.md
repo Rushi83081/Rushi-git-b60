@@ -108,3 +108,6 @@ Enable internal app communication (e.g., front-end in one VPC, DB in another).
 | **8️⃣ Launch EC2 Instances**             | Deploy instances in public/private subnets            | E.g., Web server in public, DB in private       |
 | **9️⃣ Add Load Balancer & Auto Scaling** | For high availability                                 | Manage load and redundancy                      |
 | **🔟 Monitor & Maintain**                | Enable CloudWatch and Flow Logs                       | Track performance & security                    |
+
+## For More - 
+https://github.com/abhipraydhoble/devops-b60/tree/d8ae7094b83c8baf64959978ddd68f768ce59537/AWS/VPC
