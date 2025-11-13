@@ -95,3 +95,16 @@ VPC Peering allows two VPCs to communicate privately using AWS’s internal netw
 Connect VPCs across different accounts or regions.
 
 Enable internal app communication (e.g., front-end in one VPC, DB in another).
+
+| 🧩 Step                                  | 🔧 Task                                               | 📝 Description                                  |
+| ---------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
+| **1️⃣ Create VPC**                       | Define your IP range (e.g., `10.0.0.0/16`)            | The base private network where everything lives |
+| **2️⃣ Create Subnets**                   | Public + Private (e.g., `10.0.1.0/24`, `10.0.2.0/24`) | Separate layers for different resources         |
+| **3️⃣ Attach Internet Gateway (IGW)**    | Enables internet access for public subnets            | Attach IGW to your VPC                          |
+| **4️⃣ Create Route Tables**              | Public route → IGW, Private route → NAT               | Controls where traffic goes                     |
+| **5️⃣ Associate Subnets**                | Public subnets with public route table, etc.          | Ensures proper routing                          |
+| **6️⃣ Create NAT Gateway**               | For private subnets to access the internet            | Required for updates/downloads                  |
+| **7️⃣ Security Layers**                  | Create **Security Groups** and **Network ACLs**       | Control traffic flow and protection             |
+| **8️⃣ Launch EC2 Instances**             | Deploy instances in public/private subnets            | E.g., Web server in public, DB in private       |
+| **9️⃣ Add Load Balancer & Auto Scaling** | For high availability                                 | Manage load and redundancy                      |
+| **🔟 Monitor & Maintain**                | Enable CloudWatch and Flow Logs                       | Track performance & security                    |
