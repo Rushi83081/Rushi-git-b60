@@ -124,7 +124,7 @@ It allows you to:
 🔐 Example SSH command:
 ```bash
 ssh -i mykey.pem ec2-user@<public-ip>
-
+```
 # ⚙️ **EC2 Configuration & Management**
 
 Amazon EC2 gives you full control to configure, connect, monitor, and manage your virtual servers in the AWS Cloud.  
