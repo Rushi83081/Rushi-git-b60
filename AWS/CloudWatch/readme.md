@@ -1,4 +1,4 @@
-# 📊 **Amazon CloudWatch – Complete Notes**
+# 📊 **Amazon CloudWatch – **
 
 Amazon **CloudWatch** is a **monitoring and observability service** that provides data and actionable insights for **AWS resources, applications, and services**.  
 It helps you **collect metrics**, **monitor logs**, **set alarms**, and **visualize performance** in real time.
@@ -62,7 +62,8 @@ You define alarms for specific thresholds
 
 Alarms trigger notifications or actions
 
-🧰 5. Setting Up CloudWatch Monitoring (Step-by-Step)
+## 🧰 5. Setting Up CloudWatch Monitoring (Step-by-Step)
+
 🪜 A. Monitor EC2 Instance Metrics
 
 Go to EC2 Console → Instances → Monitoring Tab
@@ -92,7 +93,7 @@ aws cloudwatch put-metric-alarm \
   --evaluation-periods 2 \
   --alarm-actions arn:aws:sns:us-east-1:123456789012:NotifyMe
 
-🪜 D. View & Visualize Metrics
+🪜 C. View & Visualize Metrics
 
 Go to CloudWatch → Dashboards → Create Dashboard
 
@@ -106,7 +107,7 @@ S3 → BucketSizeBytes
 
 Lambda → Invocations, Errors
 
-🧭 8. CloudWatch Alarms – Actions
+## 🧭 6. CloudWatch Alarms – Actions
 
 You can configure alarms to:
 
@@ -114,7 +115,7 @@ You can configure alarms to:
 
 🔄 Trigger Auto Scaling
 
-⚙️ Perform EC2 Actions (stop/start/terminate)
+## ⚙️ Perform EC2 Actions (stop/start/terminate)
 
 📡 Send Events to EventBridge
 
