@@ -42,6 +42,7 @@ docker pull nginx
 ```bash
 docker push username/myapp
 ```
+
 # Access the container’s shell (interactive mode)
 docker exec -it <container_id_or_name> /bin/bash
 
