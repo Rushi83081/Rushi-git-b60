@@ -1,4 +1,4 @@
-# 🪣 **Amazon S3 (Simple Storage Service) – Complete Notes**
+# 🪣 **Amazon S3 (Simple Storage Service) 
 
 Amazon **S3 (Simple Storage Service)** is a **scalable, secure, and highly available object storage service** used to store and retrieve any amount of data at any time — from anywhere on the web.
 
@@ -38,8 +38,6 @@ Each object consists of:
 
 ## 🏗️ **3. How to Create an S3 Bucket (Step-by-Step)**
 
-### 🪜 **A. Using AWS Console**
-
 1. **Open S3 Dashboard**  
    Go to 👉 [https://console.aws.amazon.com/s3](https://console.aws.amazon.com/s3)
 
@@ -61,7 +59,7 @@ Each object consists of:
 
 ---
 
-🧮 4. Storage Classes
+## 🧮 4. Storage Classes
 
 Amazon S3 provides different storage classes based on access frequency and cost.
 
@@ -74,7 +72,7 @@ Amazon S3 provides different storage classes based on access frequency and cost.
 | **S3 Glacier Instant Retrieval**       | Very Low                | Very Low    | Archival, occasional access              |
 | **S3 Glacier Deep Archive**            | Rare                    | Lowest      | Long-term backups (7–10 years)           |
 
-🧭 5. Versioning
+## 🧭 5. Versioning
 
 Keeps multiple versions of an object in the same bucket.
 
@@ -82,7 +80,7 @@ Protects against accidental deletions or overwrites.
 
 🧠 If you delete an object, the previous version remains recoverable.
 
-📜 7. Access Management
+## 📜 6. Access Management
 
 You can control access using:
 
@@ -92,7 +90,7 @@ Bucket Policies (Resource-based access)
 
 ACLs (Access Control Lists)rsion remains recoverable.
 
-🧹 8. Lifecycle Rules
+## 🧹 7. Lifecycle Rules
 
 Automatically transition or delete objects based on age.
 
@@ -102,7 +100,7 @@ Move objects to S3 Glacier after 30 days.
 
 Delete permanently after 365 days.
 
-🗺️ 12. Summary Table
+## 🗺️ 8. Summary Table
 
 | 🧩 Feature          | 💡 Purpose                           |
 | ------------------- | ------------------------------------ |
