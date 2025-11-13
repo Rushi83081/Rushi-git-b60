@@ -17,6 +17,7 @@ It allows you to define, provision, and manage infrastructure across multiple cl
 
 🧠 Version Control: Store and track infrastructure changes using Git.
 
+
 🏗️ Core Concepts
 
 | Concept          | Description                                                       |
