@@ -1,4 +1,4 @@
-# 📊 **Amazon CloudWatch – **
+# 📊 **Amazon CloudWatch –**
 
 Amazon **CloudWatch** is a **monitoring and observability service** that provides data and actionable insights for **AWS resources, applications, and services**.  
 It helps you **collect metrics**, **monitor logs**, **set alarms**, and **visualize performance** in real time.
