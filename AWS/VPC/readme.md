@@ -33,6 +33,31 @@ You define:
 
 ---
 
-## 🏗️ **3. VPC Architecture Overview**
+### 🪜 **A. Using AWS Console**
+
+1. **Go to the VPC Dashboard**  
+   👉 [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc)
+
+2. **Click "Create VPC"**  
+   - Choose **VPC only** or **VPC and more** (recommended)  
+   - Enter **CIDR block:** `10.0.0.0/16`
+
+3. **Add Subnets**
+   - Public Subnet: `10.0.0.0/24`
+   - Private Subnet: `10.0.1.0/24`
+   - Assign each to a different **Availability Zone** for redundancy.
+
+4. **Attach an Internet Gateway (IGW)**
+   - Create and attach IGW to your VPC.
+
+5. **Configure Route Tables**
+   - Public Route Table → Route all traffic (`0.0.0.0/0`) to IGW.
+   - Private Route Table → Route internal traffic within VPC only.
+
+6. **Launch Instances**
+   - Deploy EC2 instances in both public and private subnets.
+   - Verify access (Public → Internet, Private → Internal only).
+
+---
 
 
