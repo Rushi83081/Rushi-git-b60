@@ -36,7 +36,7 @@ git add .
 ```
 # Commit changes
 ```bash
-git commit -m "Initial commit"
+git commit -m "Mesasge"
 ```
 # Create and switch branches
 ```bash
