@@ -1,4 +1,4 @@
-# 🪣 **Amazon S3 (Simple Storage Service) 
+# 🪣 **Amazon S3 (Simple Storage Service)** 
 
 Amazon **S3 (Simple Storage Service)** is a **scalable, secure, and highly available object storage service** used to store and retrieve any amount of data at any time — from anywhere on the web.
 
