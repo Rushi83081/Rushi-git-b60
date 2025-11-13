@@ -1,30 +1,30 @@
-🧩 **Overview**
+# ☸️ **Kubernetes (K8s) Overview**
 
-Kubernetes (K8s) is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications.
+Kubernetes (**K8s**) is an **open-source container orchestration platform** that automates the **deployment**, **scaling**, and **management** of containerized applications.
 
-⚙️ Why Kubernetes?
+---
 
-🔁 Scalability: Automatically scale apps based on demand.
+## ⚙️ **Why Kubernetes?**
 
-⚡ Self-healing: Restarts failed containers automatically.
+- 🔁 **Scalability:** Automatically scales applications based on demand.  
+- ⚡ **Self-Healing:** Automatically restarts failed containers and replaces unhealthy ones.  
+- 🌐 **Load Balancing:** Efficiently distributes traffic across containers.  
+- 🧠 **Declarative Configuration:** Define your *desired state* and let Kubernetes maintain it.  
+- ☁️ **Cloud Native:** Works seamlessly across **any cloud provider** (AWS, Azure, GCP, etc.).
 
-🌐 Load Balancing: Distributes traffic efficiently.
+---
 
-🧠 Declarative Configuration: Define desired state and let K8s handle it.
+## 🏗️ **Core Components**
 
-☁️ Cloud Native: Works seamlessly across any cloud provider.
+| 🧩 **Component** | 📝 **Description** |
+| ---------------- | ----------------- |
+| **Pod** | Smallest deployable unit in Kubernetes (one or more containers). |
+| **Deployment** | Defines the desired state for Pods and manages updates. |
+| **Service** | Exposes applications to the network (internal or external). |
+| **Ingress** | Manages **external access** to services (e.g., HTTP/HTTPS). |
+| **ConfigMap / Secret** | Store **configuration data** and **sensitive information** securely. |
 
-
-🏗️ Core Components 
-
-| Component              | Description                                        |
-| ---------------------- | -------------------------------------------------- |
-| **Pod**                | Smallest deployable unit (one or more containers). |
-| **Deployment**         | Defines desired state for pods.                    |
-| **Service**            | Exposes applications to the network.               |
-| **Ingress**            | Manages external access (like HTTP).               |
-| **ConfigMap / Secret** | Store configuration and sensitive data.            |
-
+---
 # 🚀 **Kubernetes Architecture Explained**
 
 ## 🧠 Master Node (Control Plane)
