@@ -5,12 +5,17 @@ Kubernetes (K8s) is an open-source container orchestration platform that automat
 ⚙️ Why Kubernetes?
 
 🔁 Scalability: Automatically scale apps based on demand.
+
 ⚡ Self-healing: Restarts failed containers automatically.
+
 🌐 Load Balancing: Distributes traffic efficiently.
+
 🧠 Declarative Configuration: Define desired state and let K8s handle it.
+
 ☁️ Cloud Native: Works seamlessly across any cloud provider.
 
-🏗️ Core Components
+
+**🏗️ Core Components **
 
 | Component              | Description                                        |
 | ---------------------- | -------------------------------------------------- |
