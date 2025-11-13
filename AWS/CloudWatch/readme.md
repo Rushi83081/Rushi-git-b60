@@ -52,3 +52,4 @@ C --> D[Notifications (SNS, Email, SMS)]
 C --> E[Auto Scaling Actions]
 B --> F[CloudWatch Dashboards]
 F --> G[Visualization & Insights]
+```
