@@ -125,4 +125,52 @@ It allows you to:
 ```bash
 ssh -i mykey.pem ec2-user@<public-ip>
 
+# ⚙️ **EC2 Configuration & Management**
 
+Amazon EC2 gives you full control to configure, connect, monitor, and manage your virtual servers in the AWS Cloud.  
+Below are the **detailed steps** for setting up and managing EC2 instances effectively.
+
+---
+
+## 🧰 **1. Launching an EC2 Instance**
+
+You can launch an instance using the **AWS Management Console** or **AWS CLI**.  
+Here’s how you can do it step by step using the **Console** 👇
+
+---
+
+### 🪜 **Step-by-Step via AWS Console**
+
+1. **Sign in to AWS Console**  
+   Go to 👉 [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2)
+
+2. **Click “Launch Instance”**  
+   Choose a **name** for your instance (e.g., `MyFirstEC2`).
+
+3. **Select an AMI (Amazon Machine Image)**  
+   - Example: `Amazon Linux 2 AMI (Free Tier eligible)`  
+   - You can also choose Ubuntu, Windows, or a custom AMI.
+
+4. **Choose Instance Type**  
+   - Example: `t2.micro` (1 vCPU, 1 GB RAM) – Free Tier eligible  
+   - Select based on workload type.
+
+5. **Configure Key Pair (SSH Key)**  
+   - Create a **new key pair** or select an existing one.  
+   - Example Key Name: `my-ec2-key.pem`
+
+6. **Configure Network Settings**
+   - Select a **VPC** and **Subnet**.
+   - Allow inbound ports such as:
+     - `22` → SSH
+     - `80` → HTTP (for web apps)
+     - `443` → HTTPS
+
+7. **Add Storage**
+   - Default: 8 GB EBS volume  
+   - You can increase size for databases or heavy workloads.
+
+8. **Review & Launch**
+   - Review all settings and click **Launch Instance** 🚀
+
+---
