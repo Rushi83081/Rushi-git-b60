@@ -52,3 +52,81 @@ C --> E["Auto Scaling Actions"]
 B --> F["CloudWatch Dashboards"]
 F --> G["Visualization & Insights"]
 ```
+🧠 Flow Summary:
+
+AWS services generate metrics & logs
+
+CloudWatch collects them in near real-time
+
+You define alarms for specific thresholds
+
+Alarms trigger notifications or actions
+
+🧰 5. Setting Up CloudWatch Monitoring (Step-by-Step)
+🪜 A. Monitor EC2 Instance Metrics
+
+Go to EC2 Console → Instances → Monitoring Tab
+
+Choose “View in metrics” to open CloudWatch directly.
+
+Default metrics include:
+
+CPUUtilization
+
+DiskReadOps / DiskWriteOps
+
+NetworkIn / NetworkOut
+
+StatusCheckFailed
+
+🪜 B. Create an Alarm
+aws cloudwatch put-metric-alarm \
+  --alarm-name "HighCPUUtilization" \
+  --metric-name CPUUtilization \
+  --namespace AWS/EC2 \
+  --statistic Average \
+  --period 300 \
+  --threshold 80 \
+  --comparison-operator GreaterThanThreshold \
+  --dimensions Name=InstanceId,Value=i-0abcd1234efgh5678 \
+  --evaluation-periods 2 \
+  --alarm-actions arn:aws:sns:us-east-1:123456789012:NotifyMe
+
+🪜 D. View & Visualize Metrics
+
+Go to CloudWatch → Dashboards → Create Dashboard
+
+Choose widgets (Line, Gauge, Number).
+
+Add metrics such as:
+
+EC2 → CPUUtilization
+
+S3 → BucketSizeBytes
+
+Lambda → Invocations, Errors
+
+🧭 8. CloudWatch Alarms – Actions
+
+You can configure alarms to:
+
+📩 Send SNS Notifications
+
+🔄 Trigger Auto Scaling
+
+⚙️ Perform EC2 Actions (stop/start/terminate)
+
+📡 Send Events to EventBridge
+
+Example – Stop instance on low usage:
+aws cloudwatch put-metric-alarm \
+  --alarm-name "LowCPUStopInstance" \
+  --metric-name CPUUtilization \
+  --namespace AWS/EC2 \
+  --statistic Average \
+  --period 300 \
+  --threshold 10 \
+  --comparison-operator LessThanThreshold \
+  --evaluation-periods 3 \
+  --alarm-actions arn:aws:automate:us-east-1:ec2:stop \
+  --dimensions Name=InstanceId,Value=i-0abcd1234efgh5678
