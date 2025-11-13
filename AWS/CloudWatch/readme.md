@@ -44,12 +44,11 @@ It helps you:
 
 ## 🏗️ **4. How CloudWatch Works**
 
-```mermaid
 flowchart TD
-A[AWS Services (EC2, RDS, Lambda)] --> B[CloudWatch Metrics & Logs]
-B --> C[CloudWatch Alarms]
-C --> D[Notifications (SNS, Email, SMS)]
-C --> E[Auto Scaling Actions]
-B --> F[CloudWatch Dashboards]
-F --> G[Visualization & Insights]
-```
+A["AWS Services: EC2, RDS, Lambda"] --> B["CloudWatch Metrics & Logs"]
+B --> C["CloudWatch Alarms"]
+C --> D["Notifications (SNS, Email, SMS)"]
+C --> E["Auto Scaling Actions"]
+B --> F["CloudWatch Dashboards"]
+F --> G["Visualization & Insights"]
+
