@@ -1,4 +1,4 @@
-# 🌐 **Amazon VPC (Virtual Private Cloud) – Complete Notes**
+# 🌐 **Amazon VPC (Virtual Private Cloud)**
 
 Amazon **VPC (Virtual Private Cloud)** lets you **provision a logically isolated section of the AWS Cloud**, where you can **launch and manage AWS resources** in a secure, customizable virtual network.
 
