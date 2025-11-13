@@ -15,7 +15,7 @@ Kubernetes (K8s) is an open-source container orchestration platform that automat
 ☁️ Cloud Native: Works seamlessly across any cloud provider.
 
 
-**🏗️ Core Components **
+🏗️ Core Components 
 
 | Component              | Description                                        |
 | ---------------------- | -------------------------------------------------- |
