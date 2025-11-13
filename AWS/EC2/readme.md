@@ -148,11 +148,11 @@ Here’s how you can do it step by step using the **Console** 👇
    Choose a **name** for your instance (e.g., `MyFirstEC2`).
 
 3. **Select an AMI (Amazon Machine Image)**  
-   - Example: `Amazon Linux 2 AMI (Free Tier eligible)`  
+   - Example: `Amazon Linux (Free Tier eligible)`  
    - You can also choose Ubuntu, Windows, or a custom AMI.
 
 4. **Choose Instance Type**  
-   - Example: `t2.micro` (1 vCPU, 1 GB RAM) – Free Tier eligible  
+   - Example: `t3.micro` (1 vCPU, 1 GB RAM) – Free Tier eligible  
    - Select based on workload type.
 
 5. **Configure Key Pair (SSH Key)**  
@@ -164,7 +164,6 @@ Here’s how you can do it step by step using the **Console** 👇
    - Allow inbound ports such as:
      - `22` → SSH
      - `80` → HTTP (for web apps)
-     - `443` → HTTPS
 
 7. **Add Storage**
    - Default: 8 GB EBS volume  
