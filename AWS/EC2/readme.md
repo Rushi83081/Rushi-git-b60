@@ -173,4 +173,4 @@ Here’s how you can do it step by step using the **Console** 👇
    - Review all settings and click **Launch Instance** 🚀
 
 ---
-## For More - 
+## For More - https://github.com/abhipraydhoble/devops-b60/tree/d8ae7094b83c8baf64959978ddd68f768ce59537/AWS/EC2
