@@ -86,3 +86,12 @@ Security Groups are stateful (return traffic automatically allowed)
 
 NACLs are stateless (rules must be defined both ways)
 
+🔗 7. VPC Peering
+
+VPC Peering allows two VPCs to communicate privately using AWS’s internal network.
+
+✅ Use Cases:
+
+Connect VPCs across different accounts or regions.
+
+Enable internal app communication (e.g., front-end in one VPC, DB in another).
