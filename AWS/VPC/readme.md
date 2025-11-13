@@ -62,26 +62,23 @@ You define:
 🧭 5. Routing in VPC
 
 A Route Table contains a set of rules (routes) that determine where network traffic is directed.
+| Destination | Target                   |
+| ----------- | ------------------------ |
+| 10.0.0.0/16 | local                    |
+| 0.0.0.0/0   | NAT Gateway (nat-xxxxxx) |
 
-Example – Public Route Table
-Destination	Target
-10.0.0.0/16	local
-0.0.0.0/0	Internet Gateway (igw-xxxxxx)
-Example – Private Route Table
-Destination	Target
-10.0.0.0/16	local
-0.0.0.0/0	NAT Gateway (nat-xxxxxx)
 
 💡 This setup allows:
 
 Public instances → Internet access directly
-
 Private instances → Internet via NAT only
 
 🔐 6. Security Layers in VPC
-🔰 Layer	🧠 Scope	🛡️ Purpose
-Security Group	Instance-level	Allows/blocks traffic to EC2 instances
-Network ACL	Subnet-level	Controls inbound/outbound traffic for entire subnet
+| 🔰 **Layer**       | 🧠 **Scope**   | 🛡️ **Purpose**                                     |
+| ------------------ | -------------- | --------------------------------------------------- |
+| **Security Group** | Instance-level | Allows/blocks traffic to EC2 instances              |
+| **Network ACL**    | Subnet-level   | Controls inbound/outbound traffic for entire subnet |
+
 
 🧩 Key Difference:
 
