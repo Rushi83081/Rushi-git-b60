@@ -59,7 +59,7 @@ You define:
    - Verify access (Public → Internet, Private → Internal only).
 
 ---
-🧭 **5. Routing in VPC**
+##🧭 **5. Routing in VPC**
 
 A Route Table contains a set of rules (routes) that determine where network traffic is directed.
 | Destination | Target                   |
@@ -73,7 +73,7 @@ A Route Table contains a set of rules (routes) that determine where network traf
 Public instances → Internet access directly
 Private instances → Internet via NAT only
 
-🔐 **6. Security Layers in VPC**
+##🔐 **6. Security Layers in VPC**
 | 🔰 **Layer**       | 🧠 **Scope**   | 🛡️ **Purpose**                                     |
 | ------------------ | -------------- | --------------------------------------------------- |
 | **Security Group** | Instance-level | Allows/blocks traffic to EC2 instances              |
@@ -86,7 +86,7 @@ Security Groups are stateful (return traffic automatically allowed)
 
 NACLs are stateless (rules must be defined both ways)
 
-🔗**7. VPC Peering**
+##🔗**7. VPC Peering**
 
 VPC Peering allows two VPCs to communicate privately using AWS’s internal network.
 
