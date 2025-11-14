@@ -1,175 +1,176 @@
 🌟 Linux Interview Questions & Answers
 1️⃣ What is an Operating System?
 
-OS is software that manages hardware & software resources.
-It provides a user interface to interact with the computer.
+OS manages hardware, software, and resources.
+It provides a user-friendly interface to interact with the system.
 
 2️⃣ Difference Between Linux and Windows
 
-Linux → open-source, secure, customizable, free.
-Windows → proprietary, user-friendly, widely used for desktops.
+Linux → open-source, free, secure, customizable.
+Windows → proprietary, user-friendly, widely used.
 
 3️⃣ What is Open Source?
 
-Open-source software allows you to view, modify, and share code freely.
-Example: Linux, Apache, MySQL.
+Software with freely available source code to view, modify, and share.
+Examples: Linux, Apache, MySQL.
 
 4️⃣ Explain Linux Architecture
 
 Layers: Hardware → Kernel → Shell → Libraries → Applications.
-Kernel manages resources, Shell is the interface, Apps run on top.
+Kernel manages hardware, Shell is interface, Apps run on top.
 
 5️⃣ What is Virtualization?
 
-It allows creating multiple virtual machines on a single physical system.
+Allows creating multiple virtual machines on a single system.
 Helps in resource optimization and isolation.
 
 6️⃣ Hypervisor & Its Types
 
-Hypervisor manages virtual machines.
-Types: Type-1 (bare-metal), Type-2 (hosted on OS).
+Manages virtual machines.
+Type-1: bare-metal | Type-2: hosted on OS.
 
-7️⃣ What is Shell? Types? Current Shell?
+7️⃣ What is Shell? Types? How to Check Current Shell?
 
-Shell is a command-line interface between user & kernel.
+Command-line interface to communicate with OS.
 Types: Bash, Sh, Zsh, Ksh | Check: echo $SHELL
 
-8️⃣ What is Kernel? Check Kernel Info
+8️⃣ What is Kernel? How to Check Kernel Info?
 
-Kernel is the OS core, managing hardware, memory, and processes.
-Check info: uname -r
+Core of OS, manages hardware, memory, and processes.
+Command: uname -r
 
-9️⃣ Command to Check OS Info
+9️⃣ Command to Check OS Information
 cat /etc/os-release
 
 
 Displays OS name, version, and ID.
 
-🔟 Check Memory Available
+10️⃣ Command to Check Available Memory
 free -h
 
 
 Shows total, used, free memory in human-readable format.
 
-1️⃣1️⃣ Check Disk/Storage Info
-df -h   # Filesystem usage  
-lsblk   # Disk & partitions  
+11️⃣ Command to Check Storage/Disk Info
+df -h   # filesystem usage  
+lsblk   # disk & partitions
 
 
 Displays disk size, usage, and mount points.
 
-1️⃣2️⃣ Check Size of File/Directory
+12️⃣ Command to Check Size of File/Directory
 du -sh <file/dir>
 
 
-Shows total size of file or folder in human-readable format.
+Shows total size of file or folder.
 
-1️⃣3️⃣ Vim Editor Modes
+13️⃣ Explain Vim Editor Modes
 
-Normal Mode → commands, Insert Mode → typing, Command Mode → save/quit.
+Normal → commands | Insert → typing | Command → save/quit.
 Switch using i (insert) and : (command).
 
-1️⃣4️⃣ adduser vs useradd
+14️⃣ Difference Between adduser and useradd
 
-adduser → interactive & user-friendly, creates home dir automatically.
+adduser → interactive, user-friendly, auto home dir.
 useradd → low-level, manual, more control.
 
-1️⃣5️⃣ Skeleton Files
+15️⃣ What are Skeleton Files?
 
-Default template files in /etc/skel/ copied to new user home directories.
-Used to set initial configs for new users.
+Files in /etc/skel/ copied to new user home directories.
+Used to set initial user configuration.
 
-1️⃣6️⃣ /etc/passwd Fields
+16️⃣ Fields of /etc/passwd
 
-Format: username: x : UID : GID : comment : home : shell
+username:x:UID:GID:comment:home:shell
 Contains user info, home dir, default shell.
 
-1️⃣7️⃣ Check User Groups
+17️⃣ How to Check Which Groups a User Belongs To?
 groups username  
 id username
 
 
 Shows all groups a user belongs to.
 
-1️⃣8️⃣ File Types in Linux
+18️⃣ File Types in Linux
 
-- Regular, d Directory, l Link, b Block, c Character, p Pipe, s Socket.
-Each type has a special purpose in Linux.
+- Regular | d Directory | l Link | b Block | c Character | p Pipe | s Socket
+Each type has a specific purpose.
 
-1️⃣9️⃣ Hard Link vs Soft Link
+19️⃣ Hard Link vs Soft Link
 
-Hard link → points to inode, file persists even if original deleted.
-Soft link → shortcut to file path, breaks if original deleted.
+Hard → points to inode, file persists if original deleted.
+Soft → points to file path, breaks if original deleted.
 
-2️⃣0️⃣ Change Ownership
+20️⃣ How to Change Ownership of File/Directory
 chown user:group file/dir
 
 
-Changes owner and group of files or directories.
+Changes owner and group.
 
-2️⃣1️⃣ Set Permissions (Symbolic/Numeric)
+21️⃣ Set Permissions (Symbolic/Numeric)
 
 Symbolic: chmod u+rwx file | Numeric: chmod 755 file
-Controls read/write/execute permissions for user, group, others.
+Controls read/write/execute for user, group, others.
 
-2️⃣2️⃣ What is umask?
+22️⃣ What is umask?
 
-Defines default permissions for new files and directories.
-Check current: umask
+Defines default permissions for new files/directories.
+Check: umask
 
-2️⃣3️⃣ Default Permissions
+23️⃣ Default Permissions
 
-Root: File → 666, Dir → 777 | Local User: File → 666, Dir → 777
-Actual permissions = default - umask.
+Root → File 666, Dir 777 | Local User → File 666, Dir 777
+Final permissions = default – umask.
 
-2️⃣4️⃣ Crontab Fields
+24️⃣ Crontab Fields
 
 Minute | Hour | Day | Month | Weekday | Command
-Used for scheduled tasks in Linux.
+Used for scheduled tasks.
 
-2️⃣5️⃣ top Command
+25️⃣ top Command
 
-Shows real-time CPU, memory, and process usage.
+Shows real-time CPU, memory, process usage.
 Useful for monitoring system performance.
 
-2️⃣6️⃣ ps Command
+26️⃣ ps Command
 
 Displays running processes snapshot.
-Use ps aux or ps -ef for detailed info.
+Use ps aux or ps -ef.
 
-2️⃣7️⃣ grep Command
+27️⃣ grep Command
 
 Searches text patterns in files.
 Example: grep "word" file
 
-2️⃣8️⃣ Archive, Compress & Extract
+28️⃣ How to Archive, Compress & Extract Files
 tar -cvf file.tar dir/    # archive  
-tar -czvf file.tar.gz dir/  # compress  
+tar -czvf file.tar.gz dir/ # compress  
 tar -xvf file.tar.gz       # extract
 
 
-Efficient backup and restore of files/directories.
+For backup and restore of files/directories.
 
-2️⃣9️⃣ OSI Model
+29️⃣ OSI Model
 
-7-layer model: Physical → Data Link → Network → Transport → Session → Presentation → Application
+7 layers: Physical → Data Link → Network → Transport → Session → Presentation → Application
 Standard for network communication.
 
-3️⃣0️⃣ TCP vs UDP
+30️⃣ TCP vs UDP
 
 TCP → reliable, connection-oriented, slower (HTTP, SSH)
 UDP → fast, connectionless, no guarantee (DNS, streaming)
 
-3️⃣1️⃣ Basic Networking Commands
+31️⃣ Basic Networking Commands
 
-ip a → IP info, ping → connectivity, ss → sockets, traceroute → path, nslookup → DNS, hostname → system name
+ip a, ping, ss, traceroute, nslookup, hostname
+Check IP info, connectivity, sockets, DNS, system name.
 
-3️⃣2️⃣ IP Classes
+32️⃣ IP Classes
 
 Class A: 1–126 | B: 128–191 | C: 192–223 | D: multicast | E: experimental
-Defines network & host bits.
+Defines network and host bits.
 
-3️⃣3️⃣ Public vs Private IP
+33️⃣ Public vs Private IP
 
-Public IP → global, internet-accessible
-Private IP → local network, not globally unique
+Public → global, internet-accessible
+Private → local network, not globally unique
