@@ -58,7 +58,7 @@ cat /etc/os-release
 Displays OS name, version, and ID.
 
 -------------------------------------------------------------------------------------------
-# 10️⃣ Command to Check Available Memory
+**10️⃣ Command to Check Available Memory**
 
 💡 Answer: Use the command:
 
