@@ -1,5 +1,6 @@
 🌟 Linux Interview Questions & Answers
-*-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
 1️⃣ What is an Operating System?
 
 💡 Answer: OS manages hardware, software, and resources. <br>
@@ -14,50 +15,48 @@ Windows → proprietary, user-friendly, widely used.
 
 💡 Answer: Software with freely available source code to view, modify, and share. <br>
 Examples: Linux, Apache, MySQL.
-
+-------------------------------------------------------------------------------------------
 4️⃣ Explain Linux Architecture
 
 💡 Answer: Layers: Hardware → Kernel → Shell → Libraries → Applications. <br>
 Kernel manages hardware, Shell is interface, Apps run on top.
-
+-------------------------------------------------------------------------------------------
 5️⃣ What is Virtualization?
 
 💡 Answer: Allows creating multiple virtual machines on a single system. <br>
 Helps in resource optimization and isolation.
-
+-------------------------------------------------------------------------------------------
 6️⃣ Hypervisor & Its Types
 
 💡 Answer: Manages virtual machines. <br>
 Type-1: bare-metal | Type-2: hosted on OS.
-
+-------------------------------------------------------------------------------------------
 7️⃣ What is Shell? Types? How to Check Current Shell?
 
 💡 Answer: Command-line interface to communicate with OS. <br>
 Types: Bash, Sh, Zsh, Ksh | Check: echo $SHELL
-
+-------------------------------------------------------------------------------------------
 8️⃣ What is Kernel? How to Check Kernel Info?
 
 💡 Answer: Core of OS, manages hardware, memory, and processes. <br>
 Command: uname -r
-
+-------------------------------------------------------------------------------------------
 9️⃣ Command to Check OS Information
 
 💡 Answer: Use the command:
 
 cat /etc/os-release
 
-
 Displays OS name, version, and ID.
-
+-------------------------------------------------------------------------------------------
 10️⃣ Command to Check Available Memory
 
 💡 Answer: Use the command:
 
 free -h
 
-
 Shows total, used, and free memory in human-readable format.
-
+-------------------------------------------------------------------------------------------
 11️⃣ Command to Check Storage/Disk Info
 
 💡 Answer: Commands:
@@ -65,28 +64,26 @@ Shows total, used, and free memory in human-readable format.
 df -h   # Filesystem usage  
 lsblk   # Disk & partitions
 
-
 Shows disk size, usage, and mount points.
-
+-------------------------------------------------------------------------------------------
 12️⃣ Command to Check Size of File/Directory
 
 💡 Answer: Use:
 
 du -sh <file/dir>
 
-
 Displays total size in human-readable format.
-
+-------------------------------------------------------------------------------------------
 13️⃣ Explain Vim Editor Modes
 
 💡 Answer: Normal → commands | Insert → typing | Command → save/quit. <br>
 Switch modes using i (insert) and : (command).
-
+-------------------------------------------------------------------------------------------
 14️⃣ Difference Between adduser and useradd
 
 💡 Answer: adduser → interactive, user-friendly, auto home directory. <br>
 useradd → low-level, manual, gives more control.
-
+-------------------------------------------------------------------------------------------
 15️⃣ What are Skeleton Files?
 
 💡 Answer: Files in /etc/skel/ copied to new user home directories. <br>
