@@ -1,5 +1,4 @@
-```
-terraform/
+# terraform/
 ├── vpc/
 │   ├── vpc.tf
 │   ├── variable_vpc.tf
@@ -11,4 +10,3 @@ terraform/
 │
 ├── main.tf
 └── provider.tf
-```
