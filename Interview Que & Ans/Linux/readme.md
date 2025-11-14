@@ -1,5 +1,4 @@
 🌟 Linux Interview Questions & Answers
-
 1️⃣ What is an Operating System?
 
 💡 Answer: OS manages hardware, software, and resources. <br>
