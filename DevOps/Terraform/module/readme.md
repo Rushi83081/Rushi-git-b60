@@ -1,4 +1,4 @@
-# terraform/
+terraform/
 ├── vpc/
 │   ├── vpc.tf
 │   ├── variable_vpc.tf
