@@ -1,5 +1,5 @@
 flowchart TD
-
+```mermaid
     A[terraform]
     A --> B[vpc]
     B --> B1[vpc.tf]
