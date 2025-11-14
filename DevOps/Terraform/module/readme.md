@@ -1,5 +1,5 @@
 flowchart TD
-
+```mermaid
     A[terraform/]:::folder
 
     A --> B[vpc/]:::folder
@@ -17,4 +17,4 @@ flowchart TD
     classDef folder fill:#dfe7fd,stroke:#4a6fa5,stroke-width:2px;
     classDef file fill:#ffffff,stroke:#7d8597,stroke-width:1px;
     class B1,B2,B3,C1,C2,D,E file;
-
+```
