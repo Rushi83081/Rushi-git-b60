@@ -1,6 +1,6 @@
 ```
 terraform/
-├── ***vpc/*** 
+├── vpc/
 │   ├── vpc.tf
 │   ├── variable_vpc.tf
 │   └── output.tf
