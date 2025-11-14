@@ -1,14 +1,12 @@
-```mermaid
-flowchart TD
-    terraform --> vpc
-    terraform --> ec2
-    terraform --> main_tf
-    terraform --> provider_tf
-
-    vpc --> vpc_tf
-    vpc --> variable_vpc_tf
-    vpc --> output_tf
-
-    ec2 --> ec2_tf
-    ec2 --> variable_tf
-```
+terraform/
+├── vpc/
+│   ├── vpc.tf
+│   ├── variable_vpc.tf
+│   └── output.tf
+│
+├── ec2/
+│   ├── ec2.tf
+│   └── variable.tf
+│
+├── main.tf
+└── provider.tf
