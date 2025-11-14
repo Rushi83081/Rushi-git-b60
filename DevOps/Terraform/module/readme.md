@@ -1,3 +1,4 @@
+```
 terraform/
 ├── vpc/
 │   ├── vpc.tf
@@ -10,3 +11,4 @@ terraform/
 │
 ├── main.tf
 └── provider.tf
+```
