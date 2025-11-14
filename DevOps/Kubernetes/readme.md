@@ -117,6 +117,10 @@ kubectl get services
 ```bash
 kubectl exec -it my-pod -- /bin/bash
 ```
+* After Login :-
+```bash
+curl http://<cluster_ip>:80
+```
 
 6. Delete the Pod :- Deletes the pod named my-pod.
 ```bash
