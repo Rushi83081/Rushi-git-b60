@@ -1,5 +1,6 @@
-```mermaid
+
 flowchart TD
+```mermaid
     A[Start] --> B[Log in to AWS Console]
     B --> C[Navigate to EC2 Dashboard]
     C --> D[Click on 'Load Balancers']
