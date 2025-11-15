@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A([Start]) --> B{Which<br>Load Balancer?}
 
@@ -34,3 +35,4 @@ flowchart TD
     T --> U([Copy DNS Name])
     U --> V([Test in Browser or Client])
     V --> W([Completed])
+```
