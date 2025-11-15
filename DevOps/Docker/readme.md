@@ -20,7 +20,7 @@ Docker is a platform that enables developers to build, package, and run applicat
 | **Docker Hub** | Repository to store and share images.               |
 | **Volume**     | Persistent data storage for containers.             |
 
-🧱 Basic Commands
+# 🧱 Basic Commands
 
 **Build an image**
 ```bash
