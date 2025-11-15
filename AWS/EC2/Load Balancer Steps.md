@@ -1,6 +1,6 @@
 flowchart TD
     A[Start] --> B{Which Load Balancer?}
-
+```mermaid
     B -->|HTTP / HTTPS| C[Application Load Balancer (ALB)]
     B -->|TCP / UDP| D[Network Load Balancer (NLB)]
     B -->|IP Routing Only| E[Gateway Load Balancer]
@@ -34,3 +34,4 @@ flowchart TD
     T --> U[Copy DNS Name]
     U --> V[Test in Browser or Client]
     V --> W[Completed]
+```
