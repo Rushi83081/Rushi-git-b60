@@ -1,6 +1,6 @@
 
 flowchart TD
-    A([Start]) --> B{Which\nLoad Balancer?}
+    A([Start]) --> B{Which<br>Load Balancer?}
 
     B -->|HTTP / HTTPS| C[Application Load Balancer (ALB)]
     B -->|TCP / UDP| D[Network Load Balancer (NLB)]
