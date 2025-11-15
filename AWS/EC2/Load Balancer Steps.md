@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Start] --> B[Log in to AWS Console]
     B --> C[Navigate to EC2 Dashboard]
@@ -17,3 +18,4 @@ flowchart TD
     O --> P[Review Settings & Create Load Balancer]
     P --> Q[Copy DNS Name and Test]
     Q --> R[Completed]
+```
