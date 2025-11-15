@@ -4,12 +4,14 @@
 
 Terraform workspaces let you manage multiple environments (like dev, staging, prod) using the same configuration. Each workspace has its own state file, making it easy to isolate resources per environment.
 
+
 ```bash
 terraform workspace new <name>
 ```
 ✨ Example: terraform workspace new prod
 
 💡 Explanation: Creates a new workspace named prod. Useful for adding a new environment without affecting others.
+
 ```bash
 terraform workspace select <name>
 ```
