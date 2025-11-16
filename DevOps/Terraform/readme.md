@@ -1,28 +1,5 @@
 # 🌍 **DevOps — Terraform**
 
----
-
-## 🔄 **Terraform Workflow — Flowchart**
-
-```
-📁 terraform/
-│── main.tf
-│── provider.tf
-│
-└── modules/
-    ├── vpc/
-    │   ├── vpc.tf
-    │   ├── variableVpc.tf
-    │   └── output.tf
-    │
-    └── ec2/
-        ├── ec2.tf
-        ├── variableEc2.tf
-        └── output.tf
-```
-
----
-
 ## 🧩 **Overview**
 
 Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by **HashiCorp**. It enables you to **define, provision, and manage infrastructure** across multiple cloud providers using **HCL (HashiCorp Configuration Language)**.
@@ -90,20 +67,3 @@ Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by
         └── output.tf
 ```
 
-📁 terraform/
-│── main.tf
-│── provider.tf
-│
-| modules/
-|   ├── vpc/
-|    │   ├── vpc.tf
-|   │   ├── variableVpc.tf
-|  │   └── output.tf
-│
-└── ec2/
-├── ec2.tf
-├── variableEc2.tf
-└── output.tf|
-
-```
-```
