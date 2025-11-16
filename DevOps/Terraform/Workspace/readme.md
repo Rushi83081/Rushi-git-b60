@@ -1,28 +1,80 @@
-# 🛠️ Terraform Workspaces 
+# 🌐 Terraform Workspace Guide
 
-**💡 What is a Terraform Workspace?**
+Manage multiple environments (dev, test, prod) using **Terraform Workspaces**. This guide is structured, clean, and ready to upload to your GitHub repository.
 
-Terraform workspaces let you manage multiple environments (like dev, staging, prod) using the same configuration. Each workspace has its own state file, making it easy to isolate resources per environment.
+---
 
-1.
+## 🚀 What Are Terraform Workspaces?
+
+Terraform workspaces allow you to maintain multiple state files within the same configuration. This is helpful for managing different environments without duplicating code.
+
+---
+
+## 🔢 Essential Workspace Commands
+
+### **1️⃣ Create a New Workspace**
+
 ```bash
 terraform workspace new <name>
 ```
-✨ Example: terraform workspace new prod
 
-💡 Explanation: Creates a new workspace named prod. Useful for adding a new environment without affecting others.
+**Example:**
+
+```bash
+terraform workspace new prod
+```
+
+**Explanation:** Creates a new workspace named **prod**. Useful when starting a new environment.
+
+---
+
+### **2️⃣ Select an Existing Workspace**
 
 ```bash
 terraform workspace select <name>
 ```
-✨ Example: terraform workspace select default
 
-💡 Explanation: Switches to an existing workspace, e.g., default. All subsequent Terraform commands will now affect this workspace.
+**Example:**
+
+```bash
+terraform workspace select default
+```
+
+**Explanation:** Switches to an existing workspace. All future Terraform commands (`plan`, `apply`, etc.) will now apply to this workspace.
+
+---
+
+### **3️⃣ List All Workspaces**
+
 ```bash
 terraform workspace list
 ```
-✨ Explanation: Lists all available workspaces in the current Terraform configuration and highlights the active one.
+
+**Explanation:** Lists all available workspaces and marks the active one with an asterisk `*`.
+
+---
+
+### **4️⃣ Show the Active Workspace**
+
 ```bash
 terraform workspace show
 ```
-✨ Explanation: Shows the name of the currently active workspace, helping you confirm which environment you’re working in.
+
+**Explanation:** Displays the name of the currently selected workspace.
+
+---
+
+## 📌 When Should You Use Workspaces?
+
+Use workspaces for:
+
+* 🔹 Dev / Test / Prod separation
+* 🔹 Isolated Terraform state files
+* 🔹 Avoiding duplicate Terraform code across environments
+
+Avoid workspaces when:
+
+* 🔸 You need separate backend configurations
+* 🔸 You manage infra across multiple regions/accounts (use separate folders instead)
+
+---
