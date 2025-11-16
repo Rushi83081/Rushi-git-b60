@@ -49,16 +49,16 @@ Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by
 6️⃣ **Destroy** → `terraform destroy` to remove resources.
 
 📁 terraform/
-│── main.tf
+|
+|--- modules/
+| |-- vpc/
+| │    ├── vpc.tf
+| │    ├── variableVpc.tf
+| │    └── output.tf
+│ |
+| |-- ec2/
+|      |--- ec2.tf
+|      |--- variableEc2.tf
+|
+|── main.tf
 │── provider.tf
-│
-| modules/
-| ├── vpc/
-| │ ├── vpc.tf
-| │ ├── variableVpc.tf
-| │ └── output.tf
-│
-└── ec2/
-├── ec2.tf
-├── variableEc2.tf
-└── output.tf|
