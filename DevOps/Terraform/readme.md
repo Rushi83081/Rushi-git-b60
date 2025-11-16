@@ -64,6 +64,6 @@ Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by
     └── ec2/
         ├── ec2.tf
         ├── variableEc2.tf
-        └── output.tf
+       
 ```
 
