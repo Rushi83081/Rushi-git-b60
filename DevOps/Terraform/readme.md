@@ -40,44 +40,17 @@ Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by
 
 2️⃣ **Init** → `terraform init` to download provider plugins.
 
-3️⃣ **Plan** → `terraform plan` to preview changes.
+3️⃣ **Validate** → `terraform validate` to verify configuration syntax.
 
-4️⃣ **Apply** → `terraform apply` to create/update infrastructure.
+4️⃣ **Plan** → `terraform plan` to preview changes.
 
-5️⃣ **Destroy** → `terraform destroy` to remove resources.
+5️⃣ **Apply** → `terraform apply` to create/update infrastructure.
 
----
+6️⃣ **Destroy** → `terraform destroy` to remove resources.
 
-## 📘 **Example: Simple AWS EC2 Resource**
-
-```hcl
-provider "aws" {
-  region = "us-east-1"
-}
-
-resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.micro"
-}
-```
-
----
-
-## 📝 **Recommended Repository Structure**
-
-```
-📁 terraform-infra/
-│── main.tf
-│── variables.tf
-│── outputs.tf
-│── provider.tf
-└── modules/
-    └── vpc/
-        ├── main.tf
-        ├── variables.tf
-        └── outputs.tf
-```
-
----
-
-✨ *This file is ready to upload to your GitHub repository!*
+graph TD;
+A[Write<br/>Define .tf files] --> B[Init<br/>terraform init];
+B --> C[Validate<br/>terraform validate];
+C --> D[Plan<br/>terraform plan];
+D --> E[Apply<br/>terraform apply];
+E --> F[Destroy<br/>terraform destroy];
