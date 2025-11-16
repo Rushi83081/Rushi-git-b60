@@ -1,6 +1,6 @@
 # 🛠️ Terraform Workspaces 
 
-💡 What is a Terraform Workspace?
+##💡 What is a Terraform Workspace?
 
 Terraform workspaces let you manage multiple environments (like dev, staging, prod) using the same configuration. Each workspace has its own state file, making it easy to isolate resources per environment.
 
