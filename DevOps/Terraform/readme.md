@@ -49,9 +49,10 @@ Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by
 6️⃣ **Destroy** → `terraform destroy` to remove resources.
 
 graph TD;
-```
+```mermaid
 A[Write<br/>Define .tf files] --> B[Init<br/>terraform init];
 B --> C[Validate<br/>terraform validate];
 C --> D[Plan<br/>terraform plan];
 D --> E[Apply<br/>terraform apply];
 E --> F[Destroy<br/>terraform destroy];
+```
