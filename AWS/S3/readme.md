@@ -88,7 +88,7 @@ IAM Policies (User-based access)
 
 Bucket Policies (Resource-based access)
 
-ACLs (Access Control Lists)rsion remains recoverable.
+ACLs (Access Control Lists) version remains recoverable.
 
 ## 🧹 7. Lifecycle Rules
 
